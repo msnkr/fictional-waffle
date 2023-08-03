@@ -151,6 +151,10 @@ body {
   color: #fff;
 }
 
+.ideas p {
+  color: #fff;
+}
+
 .badges {
   padding: 40pt;
   margin: 0;
@@ -161,6 +165,7 @@ body {
   border-radius: 4pt;
   margin: 8pt;
   padding: 16pt;
+  text-align: center;
 }
 
 .badge h4 {
