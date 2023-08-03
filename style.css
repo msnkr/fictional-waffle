@@ -113,6 +113,7 @@ body {
 }
 
 .badge {
+  border: 1px solid #000;
 }
 
 .customer-grid {
