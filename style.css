@@ -170,7 +170,8 @@ h1 {
 }
 
 .ideas {
-  background-color: var(--dark);
+  background: url("https://images.pexels.com/photos/826349/pexels-photo-826349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    center center/cover;
   width: 100vw;
   height: 150pt;
   margin-left: -16pt;
@@ -353,6 +354,10 @@ footer {
 
   .grid {
     height: 300pt;
+  }
+
+  .customer-grid {
+    grid-template-columns: 1fr;
   }
 
   .container-footer-1 {
