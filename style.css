@@ -9,7 +9,7 @@
   --mid: #00526f;
   --light: #00719a;
   --lightest: #0090c4;
-  --alt-white: #d5ebf2;
+  --alt-white: #f0f7fe;
 }
 
 * {
@@ -78,32 +78,35 @@ h1 {
 }
 
 .hero-image {
+  position: relative;
   background: url("images/digitalprinting.jpg") center center/cover;
   width: 100vw;
-  height: 150pt;
+  height: 200pt;
 }
 
 .hero-text {
+  position: absolute;
   font-weight: bold;
-  padding: 24pt;
   font-size: 32pt;
   color: #fff;
+  top: 20pt;
 }
 
 .gradient {
   background: linear-gradient(rgba(0, 19, 26, 0.2), rgba(0, 19, 26, 1));
   width: 100%;
-  height: 150pt;
+  height: 200pt;
+  position: relative;
 }
 
 .products-container {
-  padding: 16pt;
+  padding: 34px;
 }
 
 .products-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 8pt;
+  grid-gap: 16pt;
 }
 
 .product-item {
@@ -162,10 +165,7 @@ h1 {
     center center/cover;
 }
 
-.products-btn {
-  margin-top: 8pt;
-  margin-left: 50%;
-  transform: translateX(-50%);
+.btn {
   background-color: var(--primary);
   border: none;
   width: 100%;
@@ -175,21 +175,40 @@ h1 {
   font-size: 18pt;
 }
 
+.products-btn {
+  margin: 32pt 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 .ideas {
   background: url("https://images.pexels.com/photos/826349/pexels-photo-826349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
     center center/cover;
   width: 100vw;
-  height: 150pt;
-  margin-left: -16pt;
+  height: 200pt;
+  position: relative;
+  margin-left: -26pt;
 }
 
 .ideas h1 {
   color: #fff;
+  position: absolute;
+  top: 20pt;
 }
 
 .ideas p {
   color: #fff;
   line-height: 1.8;
+  position: absolute;
+  top: 60pt;
+}
+
+.contact-btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
 }
 
 .badges {
@@ -214,7 +233,6 @@ h1 {
 }
 
 .about {
-  padding: 16pt;
   margin: 0;
 }
 
@@ -223,6 +241,8 @@ h1 {
 }
 
 .about p {
+  background-color: var(--alt-white);
+  padding: 18pt;
   margin: 0;
   line-height: 1.8;
 }
@@ -230,12 +250,7 @@ h1 {
 .about-btn {
   margin-left: 50%;
   transform: translateX(-50%);
-  background-color: var(--primary);
-  border: none;
-  padding: 8pt;
-  border: 4pt;
-  color: #fff;
-  font-size: 18pt;
+  width: 80%;
 }
 
 .customers-container h1 {
@@ -247,7 +262,7 @@ h1 {
   margin: 0;
   padding: 16pt;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 8pt;
 }
 
@@ -287,6 +302,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--alt-white);
 }
 
 .container-footer-1 {
