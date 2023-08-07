@@ -16,13 +16,15 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 48px;
+  letter-spacing: 9;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-}
-
-h1 {
-  font-size: 28px;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -43,11 +45,16 @@ h1 {
   position: absolute;
   top: 30pt;
   right: 16pt;
-  width: 20pt;
-  height: 20pt;
+  width: 30pt;
+  height: 30pt;
   z-index: 1;
-  background-color: var(--alt-white);
+  background-color: var(--dark);
   border: none;
+}
+
+.bi-list {
+  color: #fff;
+  font-size: 18pt;
 }
 
 .navbar-list-items.hidden {
@@ -59,7 +66,7 @@ h1 {
   top: 40pt;
   right: 8pt;
   list-style: none;
-  width: 80%;
+  width: 50%;
   margin-right: -16pt;
   height: 100vh;
   background-color: var(--dark);
@@ -87,9 +94,9 @@ h1 {
 .hero-text {
   position: absolute;
   font-weight: bold;
-  font-size: 32pt;
   color: #fff;
-  top: 20pt;
+  top: 0;
+  left: 8pt;
 }
 
 .gradient {
@@ -186,22 +193,30 @@ h1 {
   background: url("https://images.pexels.com/photos/826349/pexels-photo-826349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
     center center/cover;
   width: 100vw;
-  height: 200pt;
+  height: 300pt;
   position: relative;
   margin-left: -26pt;
+}
+
+.ideas-gradient {
+  width: 100vw;
+  height: 300pt;
 }
 
 .ideas h1 {
   color: #fff;
   position: absolute;
-  top: 20pt;
+  top: 24pt;
+  left: 8pt;
 }
 
 .ideas p {
   color: #fff;
   line-height: 1.8;
   position: absolute;
-  top: 60pt;
+  top: 140pt;
+  left: 8pt;
+  width: 80%;
 }
 
 .contact-btn {
@@ -210,6 +225,7 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
+  margin: 32pt 0;
 }
 
 .badges {
@@ -234,7 +250,9 @@ h1 {
 }
 
 .about {
+  padding: 24pt;
   margin: 0;
+  background-color: var(--alt-white);
 }
 
 .about h1 {
@@ -242,21 +260,23 @@ h1 {
 }
 
 .about p {
-  background-color: var(--alt-white);
-  padding: 24pt;
   margin: 0;
   line-height: 1.8;
 }
 
 .about-btn {
+  margin: 32pt 0;
   margin-left: 50%;
   transform: translateX(-50%);
   width: 80%;
 }
 
+.customers-container {
+  margin: 32pt 0;
+}
+
 .customers-container h1 {
-  margin: 0;
-  padding: 16pt;
+  margin-left: 8pt;
 }
 
 .customer-grid {
@@ -298,7 +318,8 @@ h1 {
 }
 
 footer {
-  padding: 40pt;
+  margin-top: 32pt;
+  padding: 48pt;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -322,7 +343,7 @@ footer {
 }
 
 .container-footer-2 p a {
-  margin: 8pt;
+  margin: 4pt;
 }
 
 .container-footer-3 {
@@ -350,13 +371,31 @@ footer {
     justify-content: end;
   }
 
+  .product-item p {
+    font-size: 22pt;
+    font-weight: bold;
+    padding: 8pt;
+  }
+
   .list-item a {
     color: var(--darkest);
     float: right;
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    transition: color 0.5s ease-in-out border-bottom 0.5s ease-in-out;
+  }
+
+  .list-item a:hover {
+    color: var(--darkest);
+    border-bottom: 2px solid var(--darkest);
   }
 
   .burger-btn {
     display: none;
+  }
+
+  .gradient {
+    height: 300pt;
   }
 
   .hero-image {
@@ -369,6 +408,10 @@ footer {
 
   .ideas {
     height: 300pt;
+  }
+
+  .about p {
+    padding: 32pt 48pt;
   }
 
   .badges {
@@ -389,6 +432,10 @@ footer {
 
   .container-footer-2 {
     font-size: 18pt;
+  }
+
+  .container-footer-2 p a {
+    margin: 8pt;
   }
 
   .container-footer-3 {
