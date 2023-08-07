@@ -90,6 +90,12 @@ h1 {
   color: #fff;
 }
 
+.gradient {
+  background: linear-gradient(rgba(0, 19, 26, 0.2), rgba(0, 19, 26, 1));
+  width: 100%;
+  height: 150pt;
+}
+
 .products-container {
   padding: 16pt;
 }
@@ -309,7 +315,7 @@ footer {
   line-height: 1.8;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 376px) {
   .navbar {
     justify-content: baseline;
   }
