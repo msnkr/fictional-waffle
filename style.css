@@ -173,6 +173,7 @@ h1 {
   border: 4pt;
   color: #fff;
   font-size: 18pt;
+  cursor: pointer;
 }
 
 .products-btn {
@@ -242,7 +243,7 @@ h1 {
 
 .about p {
   background-color: var(--alt-white);
-  padding: 18pt;
+  padding: 24pt;
   margin: 0;
   line-height: 1.8;
 }
