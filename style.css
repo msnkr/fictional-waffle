@@ -334,6 +334,10 @@ body {
   background: url("images/logo_9.png") center center/cover;
 }
 
+.hidden-grid-item {
+  display: none;
+}
+
 footer {
   margin-top: 32pt;
   padding: 48pt;
@@ -448,8 +452,16 @@ footer {
     background-repeat: no-repeat;
   }
 
+  .customers-container {
+    padding: 0 32pt;
+  }
+
   .customer-grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .hidden-grid-item {
+    display: block;
   }
 
   .container-footer-1 {
