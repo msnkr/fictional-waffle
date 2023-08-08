@@ -10,6 +10,7 @@
   --light: #00719a;
   --lightest: #0090c4;
   --alt-white: #f0f7fe;
+  --shadow-small: 2pt 2pt 2pt rgba(0, 19, 26, 0.5);
 }
 
 * {
@@ -18,7 +19,7 @@
 
 h1 {
   font-size: 48px;
-  letter-spacing: 9;
+  letter-spacing: -4px;
   font-weight: bold;
 }
 
@@ -96,7 +97,7 @@ body {
   position: absolute;
   font-weight: bold;
   color: #fff;
-  top: 0;
+  top: 30pt;
   left: 8pt;
 }
 
@@ -131,6 +132,7 @@ body {
   left: 8pt;
   background-color: var(--dark);
   padding: 4pt;
+  box-shadow: var(--shadow-small);
 }
 
 .item-1 {
@@ -207,7 +209,7 @@ body {
 .ideas h1 {
   color: #fff;
   position: absolute;
-  top: 24pt;
+  top: 48pt;
   left: 8pt;
 }
 
@@ -433,6 +435,10 @@ footer {
 
   .ideas {
     height: 300pt;
+  }
+
+  .ideas h1 {
+    top: 24pt;
   }
 
   .about p {
