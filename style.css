@@ -238,7 +238,6 @@ body {
 
 .badge {
   width: 250pt;
-  /* border: 2px solid var(--lightest); */
   border-radius: 4pt;
   margin: 8pt;
   padding: 8pt;
@@ -334,7 +333,7 @@ body {
   background: url("images/logo_9.png") center center/cover;
 }
 
-.hidden-grid-item {
+.hidden-item {
   display: none;
 }
 
@@ -375,6 +374,11 @@ footer {
 }
 
 @media screen and (min-width: 376px) {
+  h1 {
+    font-size: 96px;
+    letter-spacing: -6px;
+  }
+
   .navbar {
     justify-content: baseline;
   }
@@ -432,6 +436,7 @@ footer {
   }
 
   .about p {
+    font-size: 24px;
     padding: 32pt 48pt;
   }
 
@@ -456,11 +461,28 @@ footer {
     padding: 0 32pt;
   }
 
+  .customers-container h1 {
+    font-size: 84px;
+  }
+
   .customer-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .hidden-grid-item {
+  .customer-gradient {
+    background-color: rgba(0, 19, 26, 0.2);
+    width: 101%;
+    height: 101%;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  .customer-gradient:hover {
+    background-color: transparent;
+    width: 101%;
+    height: 101%;
+  }
+
+  .hidden-item {
     display: block;
   }
 
