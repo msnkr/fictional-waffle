@@ -21,7 +21,7 @@ h1 {
   font-size: 48px;
   letter-spacing: -4px;
   font-weight: bold;
-  line-height: 0.8;
+  line-height: 0.9;
 }
 
 body {
@@ -397,6 +397,7 @@ footer {
     background: none;
     float: right;
     justify-content: end;
+    margin-right: 8pt;
   }
 
   .product-item p {
@@ -459,7 +460,7 @@ footer {
   .badge {
     height: 220pt;
     padding: 16pt;
-    border: 2px solid var(--mid);
+    border: 2px solid var(--lightest);
   }
 
   .grid {
@@ -477,19 +478,6 @@ footer {
 
   .customer-grid {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .customer-gradient {
-    background-color: rgba(0, 19, 26, 0.2);
-    width: 101%;
-    height: 101%;
-    transition: background-color 0.5s ease-in-out;
-  }
-
-  .customer-gradient:hover {
-    background-color: transparent;
-    width: 101%;
-    height: 101%;
   }
 
   .hidden-item {
